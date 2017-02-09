@@ -1,0 +1,31 @@
+{
+  "name": "whiterain",
+  "version": "1.0.0",
+  "description": "a chat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sappy5678/WhiteRain.git"
+  },
+  "keywords": [
+    "chat",
+    "bot",
+    "bot",
+    "framework",
+    "WhiteRain"
+  ],
+  "author": "sappy5678",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sappy5678/WhiteRain/issues"
+  },
+  "homepage": "https://github.com/sappy5678/WhiteRain#readme",
+  "dependencies": {
+    "botbuilder": "^3.6.0",
+    "express": "^4.14.1",
+    "restify": "^4.3.0"
+  }
+}
