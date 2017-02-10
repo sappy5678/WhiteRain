@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 7.5.0
+install:
+- npm install
+script: npm test
+deploy:
+  provider: openshift
+  user: sappy5678@gmail.com
+  password:
+    secure: HSbyTrUQmG2bpPPri+WXBjjnThha+DqB7npm3JQn9eH2XToJkkNHlhnZBDSUY9vvQ9g/O2ANb1l/7nzKgEnds0rRu9slzSF3r6GXe72GQn7NyugFIoy2LXgG2wqm4L2lySa3UxMX2erHBL3l9hI13IcOrl0o/onMBYc6TMOB7XIft0ME8H2+7Z6d2IA/nfjQp4kce9Qd8grt9wwNM/a29xyeu6ydZEcUtHthmgqBsJoTuPrtrQ+RRGaO5HRfysL6XOlHv9351wybV0V2314DoOgr+q2wptII8qRFUDIgCROZJJ1l/p0hfAwdlLrX30pyq+2bAgOCQzAqeyejT65Ts4hogX1i3lz5E5SQBFRgf+aLJKvAH9MbgGRcKq9Bh3njjP9bEBAuISuT3etqvdIY+EYiArIZKsl92giYgtB8bKMoR9dMfsoPj+iYUZ04O7Ukmq/CNpizn8Z8fV3eIKi78isN2Yh3laFdGlemigJVyu0gcWObsLwAXhexBFAUCkahOieApkXlbdNgo8ST02JgJTyb+M2NbvV5yG6AwAl6FLPKegb9XWMoxB1Uf9M5znnC86k27oNJtDQ0JAA2PoFctCY6MiBJhOG/72U2GyOGUli3jTfmvdyK7KriJgGcR17zMgHqJ/EX/YqS+jFu6orY1kchjCez7S45GTQsDPeuAhA=
+  app: WhiteRain
+  domain: whiterain-sappy5678.rhcloud.com
+  on:
+    repo: sappy5678/WhiteRain
+    branch: version1
