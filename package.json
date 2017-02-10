@@ -5,8 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "mocha",
-    "start": "node --use_strict index.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
