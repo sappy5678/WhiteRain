@@ -4,7 +4,7 @@
   "description": "a chat bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,10 @@
   "homepage": "https://github.com/sappy5678/WhiteRain#readme",
   "dependencies": {
     "botbuilder": "^3.6.0",
-   "restify": "^4.3.0"
+    "coveralls": "^2.11.16",
+    "jscoverage": "^0.6.0",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "restify": "^4.3.0"
   }
 }
