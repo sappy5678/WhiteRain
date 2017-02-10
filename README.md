@@ -1,6 +1,4 @@
 # WhiteRain
-[![Build Status](https://travis-ci.org/emn178/js-md5.svg?branch=master)](https://travis-ci.org/sappy5678/WhiteRain?branch=version1)
-
-[![Coverage Status](https://coveralls.io/repos/emn178/js-md5/badge.svg?branch=master)](https://coveralls.io/r/sappy5678/WhiteRain?branch=master)
+[![Build Status](https://travis-ci.org/sappy5678/WhiteRain.svg?branch=version1)](https://travis-ci.org/sappy5678/WhiteRain)[![Coverage Status](https://coveralls.io/repos/github/sappy5678/WhiteRain/badge.svg?branch=version1)](https://coveralls.io/github/sappy5678/WhiteRain)
 
 a  chat bot
