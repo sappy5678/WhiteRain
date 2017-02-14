@@ -5,7 +5,8 @@
 // var app = express();
 var restify = require('restify');
 var builder = require('botbuilder');
-
+var modules = require('./modules.js');
+var dialogs = require('./dialogs.js');
 //=========================================================
 // Bot Setup
 //=========================================================
@@ -22,12 +23,26 @@ var connector = new builder.ChatConnector({
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 var bot = new builder.UniversalBot(connector);
+var intents = new builder.IntentDialog();
 server.post('/api/messages', connector.listen());
 
 //=========================================================
 // Bots Dialogs
 //=========================================================
 
-bot.dialog('/', function (session) {
-    session.send("Hello World");
-});
+bot.dialog('/', intents);
+
+intents.onDefault([(session)=>{session.send("HI");}]);
+
+intents.matches(/^\/online\?/i,[(session)=>{session.send('I am Here ^^');}]);
+
+intents.matches(/^\/anime/i,[]);
+
+intents.matches(/^\/test/i,[(session)=>{session.send(modules.google.test());}]);
+
+intents.matches(/^\/google/i,[(session)=>{dialogs.google.google(session);}]);
+
+//========================================================
+// Bots Library
+//========================================================
+bot.library(dialogs.google.createLibrary());
