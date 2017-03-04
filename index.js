@@ -14,9 +14,9 @@ var dialogs = require('./dialogs.js');
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
-   console.log('%s listening to %s', server.name, server.url); 
+   console.log('%s listening to %s', server.name, server.url);
 });
-  
+
 // Create chat bot
 var connector = new builder.ChatConnector({
     appId: process.env.MICROSOFT_APP_ID,
@@ -42,7 +42,9 @@ intents.matches(/^\/test/i,[(session)=>{session.send(modules.google.test());}]);
 
 intents.matches(/^\/google/i,[(session)=>{dialogs.google.google(session);}]);
 
+intents.matches(/^\/cv/i,[(session)=>{dialogs.cv.cv(session);}]);
 //========================================================
 // Bots Library
 //========================================================
 bot.library(dialogs.google.createLibrary());
+bot.library(dialogs.cv.createLibrary());

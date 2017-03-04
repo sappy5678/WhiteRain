@@ -27,6 +27,7 @@
   "dependencies": {
     "argparse": "^1.0.9",
     "botbuilder": "^3.6.0",
+    "browser": "^0.2.6",
     "cheerio": "^0.22.0",
     "coveralls": "^2.11.16",
     "google": "^2.1.0",
