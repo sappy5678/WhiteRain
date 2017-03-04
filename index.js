@@ -32,7 +32,7 @@ server.post('/api/messages', connector.listen());
 
 bot.dialog('/', intents);
 
-intents.onDefault([(session)=>{session.send("HI");}]);
+// intents.onDefault([(session)=>{session.send("HI");}]);
 
 intents.matches(/^\/online\?/i,[(session)=>{session.send('I am Here ^^');}]);
 
